@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.box {
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 749px;
+    height: 550px;
+    background: white;
+    overflow: hidden;
+}
+
+.inline-text {
+    color: white;
+    position: absolute;
+    top: 31px;
+    left: 54px;
+}
+
+.inline-text h1 {
+    font-size: 24px;
+    margin-bottom: 19px;
+}
+
+.inline-text p {
+    color: rgb(228, 228, 228);
+    opacity: 0.9;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.inline-text {
+    color: white;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    left: 54px; 
+}
+
+.box1 {
+    background: url();
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #2874f0;
+    display: flex;
+    align-items: center; 
+}
+
+.box-2 {
+    padding-top: 100px; 
+}
+
+
+.box-2 .user-data {
+    position: relative; 
+    margin-bottom: 20px; 
+}
+
+.box-2 .user-data input {
+    color: black;
+    border: none;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    outline: none;
+    background: none;
+    transition: 0.5s;
+}
+
+.box-2 .user-data label {
+    color: rgb(158, 154, 154);
+    padding: 10px 20px;
+    position: absolute;
+    top: -20px; 
+    left: 0;
+    font-size: 18px;
+    font-weight: 400;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.box-2 .user-data input:focus ~ label,
+.box-2 .user-data input:valid ~ label {
+    top: -40px; 
+    font-size: 12px;
+}
+
+.box-2 .button {
+    margin-top: 40px; 
+}
+
+.box-2 .button input.register-button {
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    background: #2874f0; 
+    color: white; 
+    border-radius: 3px; 
+    cursor: pointer; 
+    outline: none; 
+    transition: background 0.3s; /
+}
+
+.box-2 .button input.register-button:hover {
+    background: #1e60c6; 
+}
+
+.user-id p {
+    font-size: 12px;
+    color: rgb(173, 173, 173);
+    margin-top: 20px;
+}
+
+.user-id .existing-user-link {
+    display: block; 
+    font-size: 14px; 
+    text-align: center; 
+    margin-top: 10px; 
+}

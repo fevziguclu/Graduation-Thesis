@@ -1,0 +1,170 @@
+/* Aynı kaldı */
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.box {
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 749px;
+    height: 550px;
+    background: white;
+    overflow: hidden;
+}
+
+.inline-text {
+    color: white;
+    position: absolute;
+    top: 31px;
+    left: 54px;
+}
+
+.inline-text h1 {
+    font-size: 24px;
+    margin-bottom: 19px;
+}
+
+.inline-text p {
+    color: rgb(228, 228, 228);
+    opacity: 0.9;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.inline-text {
+    color: white;
+    position: absolute;
+    top: 50%; /* Merkezden biraz yukarı */
+    transform: translateY(-50%); /* Dikey hizalamayı ayarlar */
+    left: 54px; /* Sol kenardan biraz sağa */
+}
+
+.box1 {
+    background: url();
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #2874f0;
+    display: flex;
+    align-items: center; /* Dikeyde merkezlemeyi sağlar */
+}
+
+.box-2 {
+    padding-top: 100px; /* Yukarıdan 100 piksel boşluk */
+}
+
+
+.box-2 .user-data {
+    position: relative; /* Label'ı bu div içinde mutlak pozisyona göre hizalamak için */
+    margin-bottom: 20px; /* Aralığı ayarlamak için */
+}
+
+.box-2 .user-data input {
+    color: black;
+    border: none;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    outline: none;
+    background: none;
+    transition: 0.5s;
+}
+
+.box-2 .user-data label {
+    color: rgb(158, 154, 154);
+    padding: 10px 20px;
+    position: absolute;
+    top: -20px; /* Input alanının üstüne gelmesini sağlamak için */
+    left: 0;
+    font-size: 18px;
+    font-weight: 400;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.box-2 .user-data input:focus ~ label,
+.box-2 .user-data input:valid ~ label {
+    top: -40px; /* Input alanı doldurulduğunda veya odaklandığında label'ı yukarı kaydırma */
+    font-size: 12px;
+}
+
+
+
+.box-2 .user-data input:focus ~ label,
+.box-2 .user-data input:valid ~ label {
+    top: -20px;
+    font-size: 12px;
+}
+
+.box-2 .user-data input:focus {
+    border-bottom: 1px  solid #2874f0;
+}
+
+.box-2 a {
+    position: absolute;
+    top: 140px;
+    left: 315px;
+    display: inline;
+    color: #2874f0;
+    font-weight: 600;
+}
+
+.box-2 .button input {
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    background: white;
+}
+
+.user-id p {
+    font-size: 12px;
+    color: rgb(173, 173, 173);
+}
+
+.box-2 .button input[type=submit] {
+    background: rgb(255, 81, 0);
+    border-radius: 2px;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    outline: none;
+    transition: 0.5s;
+    margin-top: none;
+}
+
+.box-2 .button input[type=reset] {
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    color: #2874f0;
+    font-weight: 600;
+    outline: none;
+    transition: 0.5s;
+}
+
+.box-2 .button input[type=submit]:hover {
+    box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box-2 .button input[type=reset]:hover {
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.user-id .footer a {
+    position: absolute;
+    top: 115px;
+    left: 50px;
+    font-weight: 600 ;
+    text-decoration: none;
+    color: #2874f0
+}
+.user-id .create-account-link {
+    margin-bottom: 10px; 
+}
+
+.user-id .forgot-link {
+    margin-top: 40px; /
+}

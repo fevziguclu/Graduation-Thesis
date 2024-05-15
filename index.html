@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online shopping site for all fruits and vegetables and more for the best foods for your body</title>
+<link rel="icon" href="Images/icon.webp" type="image/x-icon">   
+<link href="style.css" rel="stylesheet">
+<script src="cart.js"></script>
+<script src="https://kit.fontawesome.com/ca3406ab17.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header-left">
+        <a href="#">Tarekor</a>
+        <div class="header-left-p">
+            <p><a href="#">Explore</a><span><b><i>Plus<i class="fa-solid fa-plus"></i></i></b></span></p>
+        </div>
+    </div>
+    <div class="header-center">
+        <input class="header-center-input" type="text" placeholder="Search for products and more">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="login">
+        <a href="login.html" class="login_bttn">Login</a>
+        <div class="login_dropdown none">
+            <ul class="login_dropdown_list">
+                <li class="login_drop_li sign_Li flex">
+                    <p class="new_login">New Customer?</p>
+                    <a href="signup.html" class="sign_up">Sign_up</a>
+                </li>
+                <li class="login_drop_li"><i class="fa-solid fa-user"></i>My Profile</li>
+                <li class="login_drop_li"><i class="fa-solid fa-square-plus"></i>Tarekort Plus Zone</li>
+                <li class="login_drop_li"><a href="orders.html"><i class="fa-solid fa-bag-shopping"></i>Order</a></li>
+                <li class="login_drop_li"><i class="fa-solid fa-heart"></i>Wishlist</li>
+                <li class="login_drop_li"><i class="fa-solid fa-money-bill"></i>Rewards</li>
+                <li class="login_drop_li"><i class="fa-solid fa-gift"></i>Gift Cards</li>
+            </ul>
+        </div>
+    </div>
+    <div class="more">
+       <span class="more_lan">More <i class="fa-solid fa-angle-down"></i></span> 
+       <div class="more_dropdown none">
+            <ul class="more_dropdown_list">
+                <li class="login_drop_li"><i class="more-icon fa fa-bell"></i>Notification Preferences</li>
+                <li class="login_drop_li"><i class="more-icon fa fa-shopping-basket"></i>Sell on Tarekor</li>
+                <li class="login_drop_li"><i class="more-icon fa fa-question"></i>7x24 Customer Care</li>
+                <li class="login_drop_li"><i class="more-icon fa fa-line-chart"></i>Advertise</li>
+            </ul>
+        </div>
+    </div>
+    <a href="addtocart.html" class="cart_lan" id="open-cart"><i class="fa-solid fa-bag-shopping"></i>Cart</a>
+    <div class="cart" id="cart">
+        <h2 class="cart-tittle">Your Cart</h2>
+        <div class="cart-content ">
+            <!-- Cart content will be displayed here -->
+        </div>
+        <div class="total">
+            <div class="total-tittle">Total</div>
+            <div class="total-price"></div>
+        </div>
+        <button type="button" class="btn-buy">Buy Now</button>
+        <i class="fa-solid fa-rectangle-xmark" id="close-cart"></i>
+    </div>
+</header>
+<section>
+    <div class="category-row">
+        <div class="category-col"> 
+            <img src="img\yesil.png" alt="">
+            <div class="dropdown">
+                <h5 class="dropbtn">Greens</h5>
+                <div class="dropdown-content">
+                    <div class="header"></div>
+                    <div class="row">  
+                        <div class="col">
+                            <h3 class="product-title">Sweet Greens</h3>
+                            <a href="#">Parsley</a>
+                            <a href="#">Cress</a>
+                            <a href="#">Purslane</a>
+                        </div>
+                        <div class="col">
+                            <h3 class="product-title">Angle Greens</h3>
+                            <a href="#">Scallion</a>
+                            <a href="#">Green Garlic</a>
+                            <a href="#">Aragula</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category-col"> 
+            <img src="img\Others.png" alt="">
+            <div class="dropdown">
+                <h5 class="dropbtn">Others Vegetables</h5>
+                <div class="dropdown-content">
+                    <div class="header"></div>
+                    <div class="row">  
+                        <div class="col">
+                            <h3 class="product-title">Low Price</h3>
+                            <a href="#">Patato</a>
+                            <a href="#">Tomato</a>
+                            <a href="#">Cucumber</a>
+                        </div>
+                        <div class="col">
+                            <h3 class="product-title">High Price</h3>
+                            <a href="#">Artichoke</a>
+                            <a href="#">Bean</a>
+                            <a href="#">Pepper</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category-col"> 
+            <img src="img\yaz.png" alt="">
+            <div class="dropdown">
+                <h5 class="dropbtn">Summer Fruits</h5>
+                <div class="dropdown-content">
+                    <div class="header"></div>
+                    <div class="row">  
+                        <div class="col">
+                            <h3 class="product-title">Shelled</h3>
+                            <a href="#">Pineapple</a>
+                            <a href="#">Banana</a>
+                            <a href="#">Walnut</a>
+                        </div>
+                        <div class="col">
+                            <h3 class="product-title">Without Peel</h3>
+                            <a href="#">Apple</a>
+                            <a href="#">Pear </a>
+                            <a href="#">Plum </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category-col"> 
+            <img src="img\kis.png" alt="">
+            <div class="dropdown">
+                <h5 class="dropbtn">Winter Fruits</h5>
+                <div class="dropdown-content">
+                    <div class="header"></div>
+                    <div class="row">  
+                        <div class="col">
+                            <h3 class="product-title">Shelled</h3>
+                            <a href="#">Nut</a>
+                            <a href="#">Chestnut</a>
+                            <a href="#">Grapefruit</a>
+                        </div>
+                        <div class="col">
+                            <h3 class="product-title">Without Peel</h3>
+                            <a href="#">Apple </a>
+                            <a href="#">Carrot </a>
+                            <a href="#">Quince</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="category-col"> 
+        <img src="img\Foreign Products.png" alt="">
+            <div class="dropdown">
+                <h5 class= "dropbtn">Foreign Products</h5>
+                <div class="dropdown-content">
+                    <div class="header"></div>
+                    <div class="row">  
+                    <div class="col">
+                        <h3 class="product-title">American Products</h3>
+                        <a href="#"> Parsley </a>
+                        <a href="#"> Cress </a>
+                        <a href="#"> Purslane</a>
+                    </div>
+                    <div class="col">
+                        <h3 class="product-title"> African Products</h3>
+                        <a href="#">Banana </a>
+                        <a href="#">Green Garlic </a>
+                        <a href="#">Aragula</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <section>
+    <div class="banner">
+       <div class="slider">
+        <img src="img\7928551.jpg" alt="banner">
+        <img src="img\14963.jpg" alt="banner">
+        <img src="img\7047862.jpg" alt="banner">
+        <img src="img\5053250.jpg" alt="banner">
+        <img src="img\3759615.jpg" alt="banner">
+        <img src="img\5897479.jpg" alt="banner">
+       </div>
+    </div>
+</section>
+<section>
+    <div class="card">
+        <div class="common-heading-left">
+            <h1>Deals of the Day</h1><i class="fa-solid fa-timer"></i>
+        </div>
+        <div class="common-heading-right">
+            <button>view all</button>
+        </div>
+    </div>
+    <div class="common-row col-trending">
+        <div class="common-col">
+            <img src="img\receller.png" class="product-img">
+            <h3 class="product-title">Jams</h3>
+            <h4> Upto 10% off></h4>
+            <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">25</i></h6>
+            <i class="fa-solid fa-bag-shopping" id="add-cart"></i>
+        </div>
+     <div class="common-col">
+            <img src="img\caylar.jpg" class="product-img">
+                <h3 class="product-title">Teas</h3>
+                <h4>3 liras payback for per kg</h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">15</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div>
+        <div class="common-col">
+            <img src="img\ballar.png" class="product-img">
+                <h3 class="product-title">Honeys</h3>
+                <h4> Discount 10 liras on cart</h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">23</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div> 
+        <div class="common-col">
+            <img src="img\un.jpg" class="product-img">
+                <h3 class="product-title">Flours</h3>
+                <h4>5 lira discount for every 3 kilos </h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">33</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div>
+        <div class="common-col">
+            <img src="img\propolis.png" class="product-img">
+                <h3 class="product-title">Propolis</h3>
+                <h4> Upto 40% off></h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">13</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div>
+        <div class="common-col">
+            <img src="img\salca.jpg" class="product-img">
+                <h3 class="product-title">Pastes</h3>
+                <h4> 10 liras free on Cart</h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">22</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div>
+        <div class="common-col">
+            <img src="img\cicek.png" class="product-img">
+                <h3 class="product-title">Dried Flowers</h3>
+                <h4> 5 liras discount for per kilos</h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">32</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div>
+        <div class="common-col">
+            <img src="img\eriste.jpg" class="product-img">
+                <h3 class="product-title">Noodles</h3>
+                <h4> Upto 20% off></h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">14</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div>
+
+    </div>
+</section>
+<section>
+    <div class="card">
+        <div class="common-heading-left">
+            <h1>Deals of the Day</h1><i class="fa-solid fa-timer"></i>
+        </div>
+        <div class="common-heading-right">
+            <button>view all</button>
+        </div>
+    </div>
+    <div class="common-row col-deals">
+        <div class="common-col">
+            <img src="img\kazma.jpg" class="product-img">
+            <h3 class="product-title">Pickaxes</h3>
+            <h4> 30% - 60% discount</h4>
+            <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">24</i></h6>
+            <i class="fa-solid fa-bag-shopping" id="add-cart"></i>
+        </div>
+     <div class="common-col">
+            <img src="img\kurek.jpg" class="product-img">
+                <h3 class="product-title">Spades</h3>
+                <h4> Upto 20% off</h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">34</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div>
+        <div class="common-col">
+            <img src="img\kabuklu.jpg" class="product-img">
+                <h3 class="product-title">Shelleds</h3>
+                <h4> 10 liras discount per kg</h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">44</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div> 
+        <div class="common-col">
+            <img src="img\kabuksuz.jpg" class="product-img">
+                <h3 class="product-title">Unpeeleds</h3>
+                <h4> %40 discount</h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">24</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div>
+        <div class="common-col">
+            <img src="img\makarna.jpg" class="product-img">
+                <h3 class="product-title">Pastas</h3>
+                <h4> Buy 3 kg pay 2 kg</h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">12</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div>
+        <div class="common-col">
+            <img src="img\ilac.jpg" class="product-img">
+                <h3 class="product-title">Medicines</h3>
+                <h4> Buy 5 kg pay 4 kg</h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">35</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div>
+        <div class="common-col">
+            <img src="img\hormon.jpg" class="product-img">
+                <h3 class="product-title">Hormones</h3>
+                <h4> Upto 30% off></h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">46</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div>
+        <div class="common-col">
+            <img src="img\gubre.jpg" class="product-img">
+                <h3 class="product-title">Fertilizers</h3>
+                <h4> 15 liras discount on Cart</h4>
+                <h6 class="price">Stars From <i class="fa-solid fa-turkish-lira-sign">57</i></h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i>        
+        </div>
+
+    </div>
+</section>
+<footer>
+    <div class="footer-row">
+        <div class="footer-col-1">
+            <div class="footer-heading">
+                <p>ABOUT</p>
+            </div>
+            <div class="footer-list">
+                <a href="#">Contact US</a>
+                <a href="#">About US</a>
+                <a href="#">Careers</a>
+                <a href="#">Tarekor Stories</a>
+                <a href="#">Press</a>
+            </div>
+        </div>
+        <div class="footer-col-2">
+            <div class="footer-heading">
+                <p>HELP</p>
+            </div>
+            <div class="footer-list">
+                <a href="#">Payments</a>
+                <a href="#">Shipping</a>
+                <a href="#">CAncellation</a>
+                <a href="#">FAQ</a>
+                <a href="#">Press</a>
+        </div>
+    </div>
+    <div class="footer-col-3">
+        <div class="footer-heading">
+            <p>POLICY</p>
+        </div>
+        <div class="footer-list">
+            <a href="#">Return Policy</a>
+            <a href="#">Term of Use</a>
+            <a href="#">Securaty</a>
+            <a href="#">Privacy</a>
+            <a href="#">Sitemap</a>
+    </div>
+</div>
+<div class="footer-col-4">
+    <div class="footer-heading">
+        <p>SOCIAL</p>
+    </div>
+    <div class="footer-list">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Youtube</a>
+</div>
+</div>
+<div class="footer-col-5">
+    <div class="footer-heading">
+        <p>Mail Us</p>
+    </div>
+    <div class="footer-list">
+    <p>Tarekor Official Private Limited,
+        Building Kiremithane,Yenidogan &
+        Yuzuncu Yil Ogretmen Evleri,
+        Yuregir , 0110185246,
+        Adana , Turkiye
+        fevzi.guclu@gmail.com
+    </p>
+</div>
+</div>
+<div class="footer-col-6">
+    <div class="footer-heading">
+        <p>Registered Office <Address></Address></p>
+    </div>
+    <div class="footer-list">
+    <p>Tarekor Official Private Limited,</p>
+    <p>Building Kiremithane,Yenidogan &</p>
+    <p>Yuzuncu Yil Ogretmen Evleri,</p>
+    <p> Adana , Turkiye</p>
+    <p>Phone :<span>05427045896</span></p>
+</div>
+</div>
+    </div>
+    <div class="footer-row2">
+        <div class="footer-row2-col">
+            <p><i class="fa-solid fa-briefcase"></i>Sell on Tarekor </p>
+        </div>
+        <div class="footer-row2-col">
+            <p><i class="fa-solid fa-rectangle-ad"></i>Advertise </p>
+        </div>
+        <div class="footer-row2-col">
+            <p><i class="fa-solid fa-gift-card"></i>Gift Cards </p>
+        </div>
+        <div class="footer-row2-col">
+            <p><i class="fa-solid fa-circle-question"></i>>Help Center </p>
+        </div>
+        <div class="footer-row2-col">
+            <p> 0 2000-2024  Tarekor.com</p>
+            <button id="open-cart">Open Cart</button>
+<div class="cart" id="cart">
+    <h2 class="cart-title">Your Cart</h2>
+    <div class="cart-content">
+    </div>
+    <div class="cart-total">
+        <span>Total:</span>
+        <span id="total-price">$0.00</span>
+    </div>
+    <button id="close-cart">Close Cart</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+    </div>
+    
+    </div>
+</footer>
+</body>
+</html>
